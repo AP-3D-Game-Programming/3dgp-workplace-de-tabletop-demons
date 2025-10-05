@@ -8,6 +8,8 @@
 
 **Lowie Casteels**
 
+**Marwan Bouchdig**
+
 ---
 
 ### samenvatting
