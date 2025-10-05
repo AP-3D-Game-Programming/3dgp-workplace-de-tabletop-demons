@@ -3,7 +3,9 @@
 ### ontwikkelaars
 
 **Jamyang Tenzin Jamyang**
+
 **Jonathan De Nies**
+
 **Lowie Casteels**
 
 ---
