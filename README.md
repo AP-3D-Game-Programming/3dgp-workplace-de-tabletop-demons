@@ -1,6 +1,6 @@
 # Inferno Rescue
 
-### ontwikkelaars
+### Ontwikkelaars
 
 **Jamyang Tenzin Jamyang**
 
@@ -12,7 +12,7 @@
 
 ---
 
-### samenvatting
+### Samenvatting
 
 Werk samen als brandweerlieden en race tegen de vlammen om levens te redden. Elke stap telt, want het vuur wacht op niemand!
 
@@ -21,7 +21,7 @@ Werk samen als brandweerlieden en race tegen de vlammen om levens te redden. Elk
 ### Materiaal
 
 - Bord van 5x6 kamers = het gebouw
-- KamerKaarten
+- Kamerkaarten
 - Vuurtokens
 - 1 dobbelsteen (D6)
 - Spelerspionnen
@@ -48,7 +48,7 @@ Elke ronde bestaat uit twee fasen:
 Iedere speler krijgt drie acties per beurt. Acties zijn:
 
 - **Bewegen**: ga naar een aangrenzende kamer of via een trap naar boven/beneden.
-- **Zoeken**: vraag de spelleider of er een bewoner in de kamer is.
+- **Zoeken**: draai de kamerkaart om te zien of er een bewoner is of niet.
 - **Dragen**: neem een bewoner mee naar een andere kamer.
 - **Blussen**: verwijder een vuurtoken.
 
@@ -56,14 +56,15 @@ Iedere speler krijgt drie acties per beurt. Acties zijn:
 
 Aan het eind van alle beurten gooit een speler de dobbelsteen:
 
-- **1–4**: Plaats een vuurtoken in de aangegeven richting (Noord, Oost, Zuid, West) vanaf het laatst geplaatste vuurtoken.
-- **5–6**: Plaats twee vuurtokens op twee kamers waar er al een vuurtoken staat.
+- **1–4**: Plaats een vuurtoken in de aangegeven richting (Noord, Oost, Zuid, West) vanaf het laatst geplaatste vuurtoken. Als het niet kan gooi de dobbelsteen opnieuw.
+- **5–6**: Plaats twee vuurtokens op twee kamers waar er al een vuurtoken staat. Als er geen kamers zijn met vuurtoken, plaats twee vuurtokens in twee kamers naast de brandende kamers.
 
 **Speciale regels:**
 
 - Staat er al vuur in een kamer waar nieuw vuur bijkomt, dan brandt die kamer volledig af en wordt ze onbegangbaar.
 - Bevindt zich een bewoner in een kamer die afbrandt, dan sterft die bewoner.
 - Als een hele verdieping afbrandt, wordt die verdieping onbegaanbaar.
+- Je kan alleen langs de trappen van verdieping veranderen.
 
 **Eindspel**
 
