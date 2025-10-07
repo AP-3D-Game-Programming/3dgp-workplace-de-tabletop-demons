@@ -48,16 +48,18 @@ Elke ronde bestaat uit twee fasen:
 Iedere speler krijgt drie acties per beurt. Acties zijn:
 
 - **Bewegen**: ga naar een aangrenzende kamer of via een trap naar boven/beneden.
+- **Blussen**: verwijder een vuurtoken.
 - **Zoeken**: draai de kamerkaart om te zien of er een bewoner is of niet.
 - **Dragen**: neem een bewoner mee naar een andere kamer.
-- **Blussen**: verwijder een vuurtoken.
+
+Dezelfde actie mag meermaals per beurt gebruikt worden
 
 **Brandfase**
 
 Aan het eind van alle beurten gooit een speler de dobbelsteen:
 
-- **1–4**: Plaats een vuurtoken in de aangegeven richting (Noord, Oost, Zuid, West) vanaf het laatst geplaatste vuurtoken. Als het niet kan gooi de dobbelsteen opnieuw.
-- **5–6**: Plaats twee vuurtokens op twee kamers waar er al een vuurtoken staat. Als er geen kamers zijn met vuurtoken, plaats twee vuurtokens in twee kamers naast de brandende kamers.
+- **1–4**: Plaats één vuurtoken in de aangegeven richting (Noord, Oost, Zuid, West) vanaf het laatst geplaatste vuurtoken. Als het niet kan gooi de dobbelsteen opnieuw.
+- **5–6**: Plaats één vuurtoken op twee kamers waar er al een vuurtoken staat. Als er geen kamers zijn met vuurtoken, plaats twee vuurtokens in twee kamers naast de brandende kamers.
 
 **Speciale regels:**
 
