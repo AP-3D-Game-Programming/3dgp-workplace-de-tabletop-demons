@@ -54,6 +54,7 @@ Iedere speler krijgt drie acties per beurt. Acties zijn:
 - **Dragen**: neem een bewoner mee naar een andere kamer.
 
 Dezelfde actie mag meermaals per beurt uitgevoerd worden.
+
 Zoeken en dragen is alleen mogelijk als er geen vuur aanwezig is in de kamer.
 
 **Brandfase**
