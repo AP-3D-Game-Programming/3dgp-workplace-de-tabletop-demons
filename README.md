@@ -62,7 +62,7 @@ Zoeken en dragen is alleen mogelijk als er geen vuur aanwezig is in de kamer.
 Aan het eind van alle beurten gooit een speler de dobbelsteen:
 
 - **1–4**: Plaats één vuurtoken in de aangegeven richting (Noord, Oost, Zuid, West) vanaf het laatst geplaatste vuurtoken. Als het niet kan gooi de dobbelsteen opnieuw.
-- **5–6**: Plaats één vuurtoken op twee kamers waar er al een vuurtoken staat. Als er geen kamers zijn met vuurtoken, plaats twee vuurtokens in twee kamers naast de brandende kamers.
+- **5–6**: Plaats één vuurtoken op twee kamers op de verdieping met de meeste vuurtokens. Als er een kamer al een vuurtoken heeft krijgt dit een prioriteit.
 
 **Speciale regels:**
 
