@@ -25,6 +25,7 @@ Werk samen als brandweerlieden en race tegen de vlammen om levens te redden. Elk
 - Vuurtokens
 - 1 dobbelsteen (D6)
 - Spelerspionnen
+- Bewonerstokens
 
 ---
 
