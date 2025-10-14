@@ -32,7 +32,7 @@ Werk samen als brandweerlieden en race tegen de vlammen om levens te redden. Elk
 ### Spelopstelling
 
 1. Schud de kamerkaarten en leg een kamerkaart omgekeerd op elke kamer van het gebouw.
-2. Kies een startpunt voor het vuur.
+2. Kies een twee startpunten voor het vuur.
 3. Elke speler kiest een pion.
 
 ---
@@ -70,6 +70,7 @@ Aan het eind van alle beurten gooit een speler de dobbelsteen:
 - Bevindt zich een bewoner in een kamer die afbrandt, dan sterft die bewoner.
 - Als een hele verdieping afbrandt, wordt die verdieping onbegaanbaar.
 - Je kan alleen langs de trappen van verdieping veranderen.
+- Wanneer een speler in een kamer staat en er ontstaat vuur in die kamer is die speler tijdelijk knocked. De andere spelers kunnen de andere speler redden door hem uit het gebouw te dragen. Wanneer de speler nog steeds in de kamer zit en de kamer afbrand, gaat de speler dood.
 
 **Eindspel**
 
