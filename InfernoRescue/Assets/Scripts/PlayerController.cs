@@ -2,14 +2,10 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    public float gravity = -10f;
-    public float moveForward;
-    public float moveHorizontal;
+    public float turnSpeed = 55f;
+    public float moveX;
+    public float moveZ;
     private Rigidbody rb;
-
-    public float jumpForce = 1.5f;
-    public Vector3 velocity;
-    public bool isGrounded;
 
 
     void Start()
@@ -21,19 +17,22 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        moveForward = Input.GetAxis("Vertical");
-        moveHorizontal = Input.GetAxis("Horizontal");
+        //Input
+        moveX = Input.GetAxis("Vertical");
+        moveZ = Input.GetAxis("Horizontal");
 
-        Vector3 move = transform.right* moveHorizontal + transform.forward*moveForward;
 
-        velocity = move * moveSpeed;
-        velocity.y = rb.linearVelocity.y;
+    }
 
-        rb.linearVelocity = velocity;
+    private void FixedUpdate()
+    {
+        //Movement
+        Vector3 forwardMove = transform.forward * moveX * moveSpeed * Time.deltaTime;
+        rb.MovePosition(rb.position + forwardMove);
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
-        {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        }
+        //Rotation
+        float turn = moveZ * turnSpeed * Time.fixedDeltaTime;
+        Quaternion turnRotation = Quaternion.Euler(0f, turn, 0f);
+        rb.MoveRotation(rb.rotation * turnRotation);
     }
 }
