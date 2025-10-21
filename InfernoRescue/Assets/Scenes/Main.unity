@@ -574,6 +574,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 6.1
       objectReference: {fileID: 0}
+    - target: {fileID: 5682032220391475793, guid: fcd1a694334f08344a7e3922d4976cc3, type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 7d7c2501e4d11cc43bd9df970b0117f4, type: 2}
     - target: {fileID: 7085260003189158313, guid: fcd1a694334f08344a7e3922d4976cc3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.14
@@ -620,6 +624,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7640919953628592407, guid: fcd1a694334f08344a7e3922d4976cc3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7640919953628882193, guid: fcd1a694334f08344a7e3922d4976cc3, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7640919953628882295, guid: fcd1a694334f08344a7e3922d4976cc3, type: 3}
