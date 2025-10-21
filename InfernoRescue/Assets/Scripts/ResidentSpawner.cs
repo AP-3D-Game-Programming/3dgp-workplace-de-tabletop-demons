@@ -22,16 +22,11 @@ public class ResidentSpawner : MonoBehaviour
             return;
         }
 
-        //int index = Random.Range(0, spawnPoints.Length);
-        //Transform point = spawnPoints[index];
-
         for (int i = 0; i < spawnPoints.Length; i++)
         {
             Instantiate(residentPrefab, spawnPoints[i].position, spawnPoints[i].rotation);
             Debug.Log($"Bewoner op {spawnPoints[i].name}");
         }
-
-        //Instantiate(firePrefab, point.position, point.rotation);
     }
 
 }
