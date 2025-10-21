@@ -47,10 +47,4 @@ MonoBehaviour:
   firePrefab: {fileID: 1582275357731197809, guid: 5334360cd0cfad84bbf6855beaf10de4, type: 3}
   spawnPoints:
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   spawnOnStart: 1

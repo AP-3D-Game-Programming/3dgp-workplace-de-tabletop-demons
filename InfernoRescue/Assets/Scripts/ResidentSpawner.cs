@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class FireSpawner : MonoBehaviour
+public class ResidentSpawner : MonoBehaviour
 {
-    public GameObject firePrefab;
+    public GameObject residentPrefab;
     public Transform[] spawnPoints;
     public bool spawnOnStart = true;
 
@@ -10,15 +10,15 @@ public class FireSpawner : MonoBehaviour
     {
         if (spawnOnStart)
         {
-            SpawnFire();
+            SpawnResident();
         }
     }
 
-    public void SpawnFire()
+    public void SpawnResident()
     {
         if (spawnPoints.Length == 0)
         {
-            Debug.LogWarning("Geen vuur spawnpoints");
+            Debug.LogWarning("Geen bewoner spawnpoints");
             return;
         }
 
@@ -27,11 +27,11 @@ public class FireSpawner : MonoBehaviour
 
         for (int i = 0; i < spawnPoints.Length; i++)
         {
-            Instantiate(firePrefab, spawnPoints[i].position, spawnPoints[i].rotation);
-            Debug.Log($"Vuur op {spawnPoints[i].name}");
+            Instantiate(residentPrefab, spawnPoints[i].position, spawnPoints[i].rotation);
+            Debug.Log($"Bewoner op {spawnPoints[i].name}");
         }
 
         //Instantiate(firePrefab, point.position, point.rotation);
     }
-    
+
 }
