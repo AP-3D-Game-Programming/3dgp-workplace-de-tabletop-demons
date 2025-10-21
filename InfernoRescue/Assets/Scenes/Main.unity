@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bewoner
       objectReference: {fileID: 0}
+    - target: {fileID: 7280804648117612125, guid: 1c00171442ac3404b8c1c218668c1f06, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -395,6 +399,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 812392856299051159, guid: 50e6479ca4b2cef41ad1bd4a018c7e8a, type: 3}
+      propertyPath: interactLayer.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 5042951214423083674, guid: 50e6479ca4b2cef41ad1bd4a018c7e8a, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8

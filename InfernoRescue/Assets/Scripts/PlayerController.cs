@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     public bool isGrounded = false;
     public float jumpForce = 10f;
 
-    public float mouseSensitivity = 2f;
+    public float mouseSensitivity = 1f;
     private float verticalRotation = 0f;
     private Transform cameraTransfrom;
 
@@ -72,7 +72,7 @@ public class Player : MonoBehaviour
         transform.Rotate(0, horizontalRotation, 0);
 
         verticalRotation -= Input.GetAxis("Mouse Y") * mouseSensitivity;
-        verticalRotation = Mathf.Clamp(verticalRotation, -90f, 90f);
+        verticalRotation = Mathf.Clamp(verticalRotation, -80f, 80f);
 
         cameraTransfrom.localRotation = Quaternion.Euler(verticalRotation, 0, 0);
     }
