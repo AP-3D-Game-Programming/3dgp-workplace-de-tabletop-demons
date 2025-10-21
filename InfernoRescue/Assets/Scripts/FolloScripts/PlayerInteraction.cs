@@ -5,6 +5,7 @@ public class PlayerInteraction : MonoBehaviour
     public Camera playerCamera;
     public float interactRange = 10f;
     public LayerMask interactLayer;
+    private Follower currentFolower;
     private void Start()
     {
         // Verberg en vergrendel de cursor
@@ -26,8 +27,20 @@ public class PlayerInteraction : MonoBehaviour
                 Follower npc = hit.collider.GetComponent<Follower>();
                 if (npc != null)
                 {
+                    if(currentFolower!=null && currentFolower != npc)
+                    {
+                        currentFolower.isFollowing = false;
+                        currentFolower.StopFollowing();
+                    }
                     npc.ToggleFollow();
-                    npc.player = transform; // speler doorgeven
+                    npc.player = transform;
+
+                    if (npc.isFollowing)
+                        currentFolower = npc;
+                    else if (currentFolower == npc)
+                        currentFolower = null;
+
+                       
                 }
             }
         }
