@@ -206,7 +206,7 @@ Transform:
   m_GameObject: {fileID: 161264995}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.57, z: -0.57}
+  m_LocalPosition: {x: 0, y: 0.57, z: -0.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -392,7 +392,7 @@ Transform:
   m_GameObject: {fileID: 237134717}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.59, y: 1.63718, z: -14.466}
+  m_LocalPosition: {x: 12.59, y: 1.63718, z: -14.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -413,8 +413,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player
   moveSpeed: 5
   turnSpeed: 55
-  moveForward: 0
-  moveHorizontal: 0
+  moveX: 0
+  moveZ: 0
+  isGrounded: 0
+  jumpForce: 10
+  mouseSensitivity: 2
 --- !u!1 &990019595
 GameObject:
   m_ObjectHideFlags: 0
