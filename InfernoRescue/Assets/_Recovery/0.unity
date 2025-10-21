@@ -355,14 +355,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: City
       objectReference: {fileID: 0}
-    - target: {fileID: 6774678908400013400, guid: 4d146a5137615e64cb77ea4e600d3624, type: 3}
-      propertyPath: m_VoxelSize
-      value: 0.036666665
-      objectReference: {fileID: 0}
-    - target: {fileID: 6774678908400013400, guid: 4d146a5137615e64cb77ea4e600d3624, type: 3}
-      propertyPath: m_NavMeshData
-      value: 
-      objectReference: {fileID: 23800000, guid: 78dc7847beeb4244088a92c119053d0c, type: 2}
     - target: {fileID: 8418083461217774712, guid: 4d146a5137615e64cb77ea4e600d3624, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

@@ -4,17 +4,17 @@ public class ExtinguishFire : MonoBehaviour
 {
     public float range = 3f;
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Extinguish();
+        }
+    }
+
     void Extinguish()
     {
         Collider[] hits = Physics.OverlapSphere(transform.position, range);
-
-        void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                Extinguish();
-            }
-        }
 
         foreach (Collider hit in hits)
         {
