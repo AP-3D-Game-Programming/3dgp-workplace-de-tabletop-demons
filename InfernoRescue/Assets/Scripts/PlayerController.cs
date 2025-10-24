@@ -1,15 +1,25 @@
 using UnityEngine;
 public class Player : MonoBehaviour
 {
+    // Ground Movement
     public float moveSpeed = 5f;
     public float turnSpeed = 55f;
     public float moveX;
     public float moveZ;
     private Rigidbody rb;
 
-    public bool isGrounded = false;
-    public float jumpForce = 10f;
+    // Jump Movement
+    public bool isGrounded = true;
+    public float jumpForce = 6f;
+    public float fallMulitplier = 2.5f;
+    public float ascendMultiplier  = 2f;
+    private float playerHeight;
+    private float groundCheckTimer = 0f;
+    private float groundCheckDelay = 0.3f;
+    private float raycastDistance;
+    public LayerMask groundLayer;
 
+    // Camera Rotation
     public float mouseSensitivity = 1f;
     private float verticalRotation = 0f;
     private Transform cameraTransfrom;
@@ -20,6 +30,11 @@ public class Player : MonoBehaviour
         rb.freezeRotation = true;
         cameraTransfrom = Camera.main.transform;
 
+        // Set the raycast underneath the player feet
+        playerHeight = GetComponent<CapsuleCollider>().height * transform.localScale.y;
+        raycastDistance = (playerHeight/ 2) + 0.2f;
+
+        //Locks the cursor
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -36,12 +51,23 @@ public class Player : MonoBehaviour
             Jump();
         }
 
-
     }
 
     private void FixedUpdate()
     {
         MovePlayer();
+        ApplyJumpPhysics();
+
+
+        if ( groundCheckTimer <= 0f)
+        {
+            Vector3 rayOrigin = transform.position + Vector3.up * 0.1f;
+            isGrounded = Physics.Raycast(rayOrigin, Vector3.down, raycastDistance, groundLayer);
+        }
+        else
+        {
+            groundCheckTimer -= Time.deltaTime;
+        }
     }
 
     void MovePlayer()
@@ -63,7 +89,20 @@ public class Player : MonoBehaviour
     void Jump()
     {
         isGrounded = false;
+        groundCheckTimer = groundCheckDelay;
         rb.linearVelocity = new Vector3(rb.linearVelocity.x, jumpForce, rb.linearVelocity.z);
+    }
+
+    void ApplyJumpPhysics()
+    {
+        if (rb.linearVelocity.y < 0)
+        {
+            rb.linearVelocity += Vector3.up * Physics.gravity.y * fallMulitplier * Time.fixedDeltaTime;
+        }
+        else if (rb.linearVelocity.y > 0)
+        {
+            rb.linearVelocity += Vector3.up * Physics.gravity.y * ascendMultiplier * Time.fixedDeltaTime;
+        }
     }
 
     void RotateCamera()
@@ -75,13 +114,5 @@ public class Player : MonoBehaviour
         verticalRotation = Mathf.Clamp(verticalRotation, -80f, 80f);
 
         cameraTransfrom.localRotation = Quaternion.Euler(verticalRotation, 0, 0);
-    }
-
-    private void OnCollisionStay(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = true;
-        }
     }
 }

@@ -294,6 +294,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8214797036393193119, guid: 50e6479ca4b2cef41ad1bd4a018c7e8a, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8230915388909087415, guid: 50e6479ca4b2cef41ad1bd4a018c7e8a, type: 3}
       propertyPath: m_Name
       value: player
@@ -411,6 +415,26 @@ PrefabInstance:
     - target: {fileID: 546209201016160640, guid: faff1340fa72285499898325955963ea, type: 3}
       propertyPath: m_Name
       value: office building
+      objectReference: {fileID: 0}
+    - target: {fileID: 546209201016160640, guid: faff1340fa72285499898325955963ea, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 546209201016160642, guid: faff1340fa72285499898325955963ea, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 546209201016160642, guid: faff1340fa72285499898325955963ea, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 3870055407855691737, guid: faff1340fa72285499898325955963ea, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3870055407855691737, guid: faff1340fa72285499898325955963ea, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
