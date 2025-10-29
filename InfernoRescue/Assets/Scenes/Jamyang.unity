@@ -199,24 +199,44 @@ MonoBehaviour:
   openAngle: -90
   openSpeed: 2
   isOpen: 0
---- !u!1 &708144550 stripped
+--- !u!1 &613726535 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 546209201016164200, guid: faff1340fa72285499898325955963ea, type: 3}
+  m_CorrespondingSourceObject: {fileID: 546209201016160732, guid: faff1340fa72285499898325955963ea, type: 3}
   m_PrefabInstance: {fileID: 1775668432606214377}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &708144555
+--- !u!114 &613726540
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 708144550}
+  m_GameObject: {fileID: 613726535}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  openAngle: -90
+  openAngle: 90
+  openSpeed: 2
+  isOpen: 0
+--- !u!1 &676683367 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 546209201016164084, guid: faff1340fa72285499898325955963ea, type: 3}
+  m_PrefabInstance: {fileID: 1775668432606214377}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &676683372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676683367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
+  openAngle: 90
   openSpeed: 2
   isOpen: 0
 --- !u!1 &742317548 stripped
@@ -567,6 +587,26 @@ MonoBehaviour:
   openAngle: 90
   openSpeed: 2
   isOpen: 0
+--- !u!1 &1323048821 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 546209201016164180, guid: faff1340fa72285499898325955963ea, type: 3}
+  m_PrefabInstance: {fileID: 1775668432606214377}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1323048826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323048821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
+  openAngle: -90
+  openSpeed: 2
+  isOpen: 0
 --- !u!1 &1377523788 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 546209201016164172, guid: faff1340fa72285499898325955963ea, type: 3}
@@ -856,6 +896,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 546209201016164084, guid: faff1340fa72285499898325955963ea, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 676683372}
     - targetCorrespondingSourceObject: {fileID: 546209201016164172, guid: faff1340fa72285499898325955963ea, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1377523793}
@@ -910,12 +953,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 546209201016164008, guid: faff1340fa72285499898325955963ea, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1559315896}
+    - targetCorrespondingSourceObject: {fileID: 546209201016160732, guid: faff1340fa72285499898325955963ea, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 613726540}
     - targetCorrespondingSourceObject: {fileID: 546209201016164214, guid: faff1340fa72285499898325955963ea, type: 3}
       insertIndex: -1
       addedObject: {fileID: 36445403}
-    - targetCorrespondingSourceObject: {fileID: 546209201016164200, guid: faff1340fa72285499898325955963ea, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 546209201016164180, guid: faff1340fa72285499898325955963ea, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 708144555}
+      addedObject: {fileID: 1323048826}
   m_SourcePrefab: {fileID: 100100000, guid: faff1340fa72285499898325955963ea, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
