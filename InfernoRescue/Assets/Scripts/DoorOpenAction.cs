@@ -17,7 +17,7 @@ public class DoorOpenAction : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, interactDistance))
             {
-                DoorInteraction door = hit.transform.GetComponent<DoorInteraction>();
+                DoorInteraction door = hit.transform.GetComponentInParent<DoorInteraction>();
                 if (door != null)
                 {
                     door.ToggleDoor();

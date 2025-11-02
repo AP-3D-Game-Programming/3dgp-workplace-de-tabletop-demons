@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class DoorAction : MonoBehaviour {
 
-
-   
-
-   
-
     void Update ()
     {
         if (Input.GetKeyDown(KeyCode.E))

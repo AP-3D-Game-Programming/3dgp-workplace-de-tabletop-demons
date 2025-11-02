@@ -1,5 +1,7 @@
 using System.Collections;
+using Unity.AI.Navigation;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class DoorInteraction : MonoBehaviour
 {
@@ -12,6 +14,9 @@ public class DoorInteraction : MonoBehaviour
     private Quaternion _closedRotation;
     private Quaternion _openRotation;
     private Coroutine _currentCourotine;
+
+    public NavMeshObstacle doorObstacle;
+    public NavMeshSurface navMeshSurface;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,7 +28,7 @@ public class DoorInteraction : MonoBehaviour
     public void ToggleDoor()
     {
         if (_currentCourotine != null)
-            StopCoroutine(_currentCourotine);
+            return;
 
         _currentCourotine = StartCoroutine(ToggleDoorCoroutine());
     }
@@ -34,16 +39,30 @@ public class DoorInteraction : MonoBehaviour
         Quaternion targetRotation = isOpen ? _closedRotation : _openRotation;
         isOpen = !isOpen;
 
+        if (isOpen && doorObstacle != null)
+        {
+            doorObstacle.enabled = false;
+        }
+
         float time = 0f;
 
         while (time < 1f)
         {
             time += Time.deltaTime* openSpeed;
-            transform.rotation = Quaternion.Slerp(startRotation, targetRotation, time);
+            transform.rotation = Quaternion.Slerp(startRotation, targetRotation, Mathf.Clamp01(time));
             yield return null;
         }
 
         transform.rotation = targetRotation;
         _currentCourotine = null;
+
+        if (isOpen && navMeshSurface != null)
+        {
+            navMeshSurface.BuildNavMesh();
+        }
+        if (!isOpen && navMeshSurface != null)
+        {
+            doorObstacle.enabled = true;
+        }
     }
 }

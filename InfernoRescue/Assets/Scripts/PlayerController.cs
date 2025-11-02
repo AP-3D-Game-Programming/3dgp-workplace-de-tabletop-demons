@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
 
         // Set the raycast underneath the player feet
         playerHeight = GetComponent<CapsuleCollider>().height * transform.localScale.y;
-        raycastDistance = (playerHeight/ 2) + 0.2f;
+        raycastDistance = (playerHeight/ 2) + 0.3f;
 
         //Locks the cursor
         Cursor.lockState = CursorLockMode.Locked;
@@ -59,15 +59,8 @@ public class Player : MonoBehaviour
         ApplyJumpPhysics();
 
 
-        if ( groundCheckTimer <= 0f)
-        {
-            Vector3 rayOrigin = transform.position + Vector3.up * 0.1f;
-            isGrounded = Physics.Raycast(rayOrigin, Vector3.down, raycastDistance, groundLayer);
-        }
-        else
-        {
-            groundCheckTimer -= Time.deltaTime;
-        }
+        Vector3 rayOrigin = transform.position + Vector3.up * 0.1f;
+        isGrounded = Physics.Raycast(rayOrigin, Vector3.down, raycastDistance, groundLayer);
     }
 
     void MovePlayer()
