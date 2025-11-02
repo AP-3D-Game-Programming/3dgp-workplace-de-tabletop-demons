@@ -22,10 +22,11 @@ public class FireSpawner : MonoBehaviour
             return;
         }
 
-        for (int i = 0; i < spawnPoints.Length; i++)
+        for (int i = 0; i < 2; i++)
         {
-            Instantiate(firePrefab, spawnPoints[i].position, spawnPoints[i].rotation);
-            Debug.Log($"Vuur op {spawnPoints[i].name}");
+            int index = Random.Range(0, spawnPoints.Length);
+            Instantiate(firePrefab, spawnPoints[index].position, spawnPoints[index].rotation);
+            Debug.Log($"Vuur op {spawnPoints[index].name}");
         }
     }
     
