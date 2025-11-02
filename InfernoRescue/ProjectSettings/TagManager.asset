@@ -13,6 +13,7 @@ TagManager:
   - button f2
   - button f1
   - button f6
+  - Follower
   layers:
   - Default
   - TransparentFX
