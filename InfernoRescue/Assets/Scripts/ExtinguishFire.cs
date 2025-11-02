@@ -6,9 +6,9 @@ public class ExtinguishFire : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.F))
         {
-            Debug.Log("E Pressed");
+            Debug.Log("F Pressed");
             Extinguish();
         }
     }
