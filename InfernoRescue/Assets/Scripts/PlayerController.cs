@@ -3,36 +3,31 @@ public class Player : MonoBehaviour
 {
     // Ground Movement
     public float moveSpeed = 5f;
-    public float turnSpeed = 55f;
-    public float moveX;
-    public float moveZ;
+    private float moveX;
+    private float moveZ;
     private Rigidbody rb;
 
     // Jump Movement
     public bool isGrounded = true;
     public float jumpForce = 6f;
-    public float fallMulitplier = 2.5f;
+    public float fallMultiplier = 2.5f;
     public float ascendMultiplier  = 2f;
     private float playerHeight;
-    private float groundCheckTimer = 0f;
-    private float groundCheckDelay = 0.3f;
-    private float raycastDistance;
     public LayerMask groundLayer;
 
     // Camera Rotation
     public float mouseSensitivity = 1f;
     private float verticalRotation = 0f;
-    private Transform cameraTransfrom;
+    private Transform cameraTransform;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
-        cameraTransfrom = Camera.main.transform;
+        cameraTransform = Camera.main.transform;
 
         // Set the raycast underneath the player feet
         playerHeight = GetComponent<CapsuleCollider>().height * transform.localScale.y;
-        raycastDistance = (playerHeight/ 2) + 0.3f;
 
         //Locks the cursor
         Cursor.lockState = CursorLockMode.Locked;
@@ -59,8 +54,9 @@ public class Player : MonoBehaviour
         ApplyJumpPhysics();
 
 
-        Vector3 rayOrigin = transform.position + Vector3.up * 0.1f;
-        isGrounded = Physics.Raycast(rayOrigin, Vector3.down, raycastDistance, groundLayer);
+        Vector3 spherePosition = transform.position + Vector3.down * (playerHeight/2 - 0.1f);
+        float sphereRadius = 0.3f;
+        isGrounded = Physics.CheckSphere(spherePosition, sphereRadius, groundLayer ); 
     }
 
     void MovePlayer()
@@ -75,14 +71,13 @@ public class Player : MonoBehaviour
 
         if (isGrounded && moveZ == 0 && moveX == 0)
         {
-            rb.linearVelocity = new Vector3(0, rb.linearVelocity.y, 0);
+            rb.linearVelocity = new Vector3(0f, rb.linearVelocity.y, 0f);
         }
     }
 
     void Jump()
     {
         isGrounded = false;
-        groundCheckTimer = groundCheckDelay;
         rb.linearVelocity = new Vector3(rb.linearVelocity.x, jumpForce, rb.linearVelocity.z);
     }
 
@@ -90,7 +85,7 @@ public class Player : MonoBehaviour
     {
         if (rb.linearVelocity.y < 0)
         {
-            rb.linearVelocity += Vector3.up * Physics.gravity.y * fallMulitplier * Time.fixedDeltaTime;
+            rb.linearVelocity += Vector3.up * Physics.gravity.y * fallMultiplier * Time.fixedDeltaTime;
         }
         else if (rb.linearVelocity.y > 0)
         {
@@ -106,6 +101,6 @@ public class Player : MonoBehaviour
         verticalRotation -= Input.GetAxis("Mouse Y") * mouseSensitivity;
         verticalRotation = Mathf.Clamp(verticalRotation, -80f, 80f);
 
-        cameraTransfrom.localRotation = Quaternion.Euler(verticalRotation, 0, 0);
+        cameraTransform.localRotation = Quaternion.Euler(verticalRotation, 0, 0);
     }
 }
