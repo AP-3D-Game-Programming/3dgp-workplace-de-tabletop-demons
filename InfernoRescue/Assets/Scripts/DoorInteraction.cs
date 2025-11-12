@@ -56,13 +56,6 @@ public class DoorInteraction : MonoBehaviour
         transform.rotation = targetRotation;
         _currentCourotine = null;
 
-        if (isOpen && navMeshSurface != null)
-        {
-            navMeshSurface.BuildNavMesh();
-        }
-        if (!isOpen && navMeshSurface != null)
-        {
-            doorObstacle.enabled = true;
-        }
+        doorObstacle.carving = !isOpen;
     }
 }
