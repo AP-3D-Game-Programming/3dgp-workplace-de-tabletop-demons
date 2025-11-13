@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dropzone
   vfxEffect: {fileID: 2821406001958269905, guid: f4a2c89520756b14cb8e3cce536cf9cd, type: 3}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 5907664448136874302}
 --- !u!82 &5907664448136874302
 AudioSource:
   m_ObjectHideFlags: 0

@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 6170570391705466905}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.57, z: 0.13}
+  m_LocalPosition: {x: 0, y: 0.57, z: -0.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -67,7 +67,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 83
+  field of view: 51
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -152,6 +152,8 @@ GameObject:
   - component: {fileID: 1246454310443225602}
   - component: {fileID: 8214797036393193119}
   - component: {fileID: 812392856299051159}
+  - component: {fileID: 4641642207888255448}
+  - component: {fileID: 8491368898481330461}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -294,11 +296,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   moveSpeed: 5
-  turnSpeed: 55
-  moveX: 0
-  moveZ: 0
   isGrounded: 0
   jumpForce: 10
+  fallMultiplier: 2.5
+  ascendMultiplier: 2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
   mouseSensitivity: 2
 --- !u!114 &812392856299051159
 MonoBehaviour:
@@ -317,3 +321,29 @@ MonoBehaviour:
   interactLayer:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &4641642207888255448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8230915388909087415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59e40a0aaf4d7c47832d971995c6440, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorOpenAction
+  interactDistance: 3
+--- !u!114 &8491368898481330461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8230915388909087415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aa91941c69595d4e9b7cece815cae4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ExtinguishFire
+  range: 3
