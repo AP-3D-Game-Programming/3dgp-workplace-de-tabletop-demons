@@ -7,6 +7,7 @@ public class Follower : MonoBehaviour
     public bool isFollowing = false;
 
     public bool isAlive = true;
+    public bool isRescued = false; 
 
     private NavMeshAgent agent;
     private Animator anim; 

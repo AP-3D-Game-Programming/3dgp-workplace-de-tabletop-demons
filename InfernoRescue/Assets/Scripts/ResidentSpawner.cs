@@ -26,48 +26,26 @@ public class ResidentSpawner : MonoBehaviour
             Debug.LogWarning("Geen bewoner spawnpoints");
             return;
         }
-        /*foreach (Transform spawnPoint in spawnPoints)
+        foreach (Transform spawnPoint in spawnPoints)
         {
-            // 1. Kies een willekeurige Prefab (uiterlijk) VOOR DEZE LOOP
             int randomPrefabIndex = Random.Range(0, residentPrefabs.Length);
             GameObject prefabToSpawn = residentPrefabs[randomPrefabIndex];
 
-            // 2. Gebruik het HUIDIGE spawnpoint uit de loop
-            // 3. Instantieer de gekozen bewoner op het gekozen punt
             Instantiate(
                 prefabToSpawn,
                 spawnPoint.position,
                 spawnPoint.rotation
             );
-
-            Debug.Log($"Bewoner {prefabToSpawn.name} gespawnd op {spawnPoint.name}.");
         }
-        */
-        //// --- Logica om een willekeurige bewoner te kiezen ---
-        //// 1. Kies een willekeurige Prefab (uiterlijk)
-        int randomPrefabIndex = Random.Range(0, residentPrefabs.Length);
-        GameObject prefabToSpawn = residentPrefabs[randomPrefabIndex];
-
-        //// 2. Kies een willekeurige SpawnPoint
-        int randomSpawnPointIndex = Random.Range(0, spawnPoints.Length);
-        Transform selectedSpawnPoint = spawnPoints[randomSpawnPointIndex];
-
-        //// 3. Instantieer de gekozen bewoner op het gekozen punt
-        Instantiate(
-            prefabToSpawn,
-            selectedSpawnPoint.position,
-            selectedSpawnPoint.rotation
-        );
-
-        Debug.Log($"Bewoner **{prefabToSpawn.name}** gespawnd op **{selectedSpawnPoint.name}**.");
-
-       /* for (int i = 0; i < 1; i++)
+        if (LevelManager.Instance != null)
         {
-            int index = Random.Range(0, spawnPoints.Length);
-            Instantiate(residentPrefab, spawnPoints[index].position, spawnPoints[index].rotation);
-            Debug.Log($"Bewoner op {spawnPoints[index].name}");
+            // Het totaal is gelijk aan het aantal spawnpoints
+            LevelManager.Instance.SetTotalResidents(spawnPoints.Length);
         }
-       */
+        else
+        {
+            Debug.LogError("LevelManager.Instance niet gevonden!");
+        }
     }
 
 }

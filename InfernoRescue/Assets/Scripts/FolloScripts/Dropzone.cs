@@ -29,8 +29,10 @@ public class Dropzone : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Follower npc = other.GetComponent<Follower>();
-        if (npc != null)
+        if (npc != null && !npc.isRescued)
         {
+            npc.isRescued = true;
+
             npc.StopFollowing();
             Debug.Log("NPC afgeleverd in dropzone!");
 
@@ -44,6 +46,14 @@ public class Dropzone : MonoBehaviour
             if (audioSource != null)
             {
                 audioSource.Play();
+            }
+            if (LevelManager.Instance != null)
+            {
+                LevelManager.Instance.RescueResident();
+            }
+            else
+            {
+                Debug.LogError("LevelManager.Instance niet gevonden!");
             }
         }
     }
