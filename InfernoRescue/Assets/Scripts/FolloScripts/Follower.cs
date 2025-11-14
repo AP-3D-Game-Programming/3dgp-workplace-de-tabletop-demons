@@ -6,6 +6,8 @@ public class Follower : MonoBehaviour
     public float followDistance = 2f;
     public bool isFollowing = false;
 
+    public bool isAlive = true;
+
     private NavMeshAgent agent;
     private Animator anim; 
 
@@ -17,19 +19,24 @@ public class Follower : MonoBehaviour
 
     void Update()
     {
-        if (isFollowing && player != null)
+        if (isAlive)
         {
-            float distance = Vector3.Distance(transform.position, player.position);
-            if (distance > followDistance)
+
+            if (isFollowing && player != null)
             {
-                agent.SetDestination(player.position);
+                float distance = Vector3.Distance(transform.position, player.position);
+                if (distance > followDistance)
+                {
+                    agent.SetDestination(player.position);
+                }
+                else
+                {
+                    agent.ResetPath();
+                }
             }
-            else
-            {
-                agent.ResetPath();
-            }
+            UpdateAnimator();
+
         }
-        UpdateAnimator();
     }
     void UpdateAnimator()
     {
@@ -37,6 +44,14 @@ public class Follower : MonoBehaviour
         {
             return;
         }
+
+        if (!isAlive)
+        {
+            anim.SetFloat("Vert", 0, 0.1f, Time.deltaTime);
+            anim.SetFloat("Hor", 0, 0.1f, Time.deltaTime);
+            anim.SetBool("IsJump", false);
+        }
+
         Vector3 velocity = agent.velocity;
 
        
@@ -60,8 +75,42 @@ public class Follower : MonoBehaviour
             anim.SetBool("IsJump", false);
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (isAlive && other.CompareTag("Fire"))
+        {
+            Die();
+        }
+    }
+
+    public void Die()
+    {
+        if (!isAlive) return;
+
+        isAlive = false;
+        StopFollowing();
+
+        if (agent != null)
+        {
+            agent.enabled = false;
+        }
+
+        Collider residentCollider = GetComponent<Collider>();
+        if (residentCollider != null)
+        {
+            residentCollider.enabled = false;
+        }
+
+        Destroy(gameObject);
+
+        Debug.Log(gameObject.name + " died from fire");
+    }
+
     public void ToggleFollow()
     {
+        if (!isAlive) return;
+
         isFollowing = !isFollowing;
         if (!isFollowing)
         {

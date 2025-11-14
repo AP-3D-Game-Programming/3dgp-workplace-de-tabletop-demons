@@ -2,7 +2,7 @@
 - Project name: InfernoRescue
 - Unity version: Unity 6000.2.6f2
 - Active game object:
-  - Name: Canvas
+  - Name: Character 1
   - Tag: Untagged
-  - Layer: UI
+  - Layer: Interact
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
