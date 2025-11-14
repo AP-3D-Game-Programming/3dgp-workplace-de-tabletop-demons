@@ -77,6 +77,7 @@ public class Follower : MonoBehaviour
         }
     }
 
+
     private void OnTriggerEnter(Collider other)
     {
         if (isAlive && other.CompareTag("Fire"))
@@ -102,7 +103,10 @@ public class Follower : MonoBehaviour
         {
             residentCollider.enabled = false;
         }
-
+        if (LevelManager.Instance != null)
+        {
+            LevelManager.Instance.RegisterDeath();
+        }
         Destroy(gameObject);
 
         Debug.Log(gameObject.name + " died from fire");
