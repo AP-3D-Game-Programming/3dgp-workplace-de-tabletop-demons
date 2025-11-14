@@ -33,6 +33,10 @@ public class Follower : MonoBehaviour
     }
     void UpdateAnimator()
     {
+        if (anim == null)
+        {
+            return;
+        }
         Vector3 velocity = agent.velocity;
 
        
