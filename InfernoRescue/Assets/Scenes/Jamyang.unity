@@ -1199,6 +1199,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3118582014472070403, guid: 50e6479ca4b2cef41ad1bd4a018c7e8a, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: d9bde8a682c97214dbd97a3b84dcc1b6, type: 2}
     - target: {fileID: 4165446237954639174, guid: 50e6479ca4b2cef41ad1bd4a018c7e8a, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.29
@@ -2278,7 +2282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  openAngle: -90
+  openAngle: 90
   openSpeed: 2
   isOpen: 0
   doorObstacle: {fileID: 1941239752}
@@ -2347,11 +2351,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  openAngle: 90
+  openAngle: -90
   openSpeed: 2
   isOpen: 0
-  doorObstacle: {fileID: 0}
-  navMeshSurface: {fileID: 0}
+  doorObstacle: {fileID: 1999041961}
+  navMeshSurface: {fileID: 1488569034}
+--- !u!208 &1999041961
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999041954}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.0050000004, y: 0.001, z: 0.012}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.0050000004, y: 0.001, z: -0.001}
+  m_TimeToStationary: 0.5
 --- !u!1001 &2026234807
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2484,6 +2504,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1488569033}
     m_Modifications:
+    - target: {fileID: 546209201015872232, guid: faff1340fa72285499898325955963ea, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 546209201015872232, guid: faff1340fa72285499898325955963ea, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 546209201015872232, guid: faff1340fa72285499898325955963ea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.00974
+      objectReference: {fileID: 0}
     - target: {fileID: 546209201015872992, guid: faff1340fa72285499898325955963ea, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.12425
@@ -2540,6 +2572,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 546209201016160642, guid: faff1340fa72285499898325955963ea, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270314803754790527, guid: faff1340fa72285499898325955963ea, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270314803754790527, guid: faff1340fa72285499898325955963ea, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3486617016247611314, guid: faff1340fa72285499898325955963ea, type: 3}
       propertyPath: m_NavMeshData
       value: 
@@ -2548,6 +2592,10 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3870055407855691737, guid: faff1340fa72285499898325955963ea, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: b6e5e74fbb556ef4694bf6fe4611ef1c, type: 2}
     - target: {fileID: 3870055407855691737, guid: faff1340fa72285499898325955963ea, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -2596,6 +2644,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 546209201016163982, guid: faff1340fa72285499898325955963ea, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1999041956}
+    - targetCorrespondingSourceObject: {fileID: 546209201016163982, guid: faff1340fa72285499898325955963ea, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1999041961}
     - targetCorrespondingSourceObject: {fileID: 546209201016163980, guid: faff1340fa72285499898325955963ea, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1521569526}
