@@ -2,7 +2,7 @@
 - Project name: InfernoRescue
 - Unity version: Unity 6000.2.6f2
 - Active game object:
-  - Name: OxygenText
-  - Tag: Untagged
-  - Layer: UI
+  - Name: player
+  - Tag: Player
+  - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
