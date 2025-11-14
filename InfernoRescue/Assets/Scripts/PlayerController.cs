@@ -53,10 +53,11 @@ public class Player : MonoBehaviour
         MovePlayer();
         ApplyJumpPhysics();
 
+        float rayLength = (playerHeight / 2) + 0.2f;
+        isGrounded = Physics.Raycast(transform.position, Vector3.down, rayLength, groundLayer);
 
-        Vector3 spherePosition = transform.position + Vector3.down * (playerHeight/2 - 0.1f);
-        float sphereRadius = 0.3f;
-        isGrounded = Physics.CheckSphere(spherePosition, sphereRadius, groundLayer ); 
+        Debug.DrawRay(transform.position, Vector3.down * rayLength, isGrounded ? Color.yellow:Color.red);
+        
     }
 
     void MovePlayer()
