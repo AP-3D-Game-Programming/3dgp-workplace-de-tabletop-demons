@@ -1154,6 +1154,7 @@ MonoBehaviour:
   player: {fileID: 0}
   followDistance: 2
   isFollowing: 0
+  isAlive: 1
 --- !u!54 &4262010115471337489
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1212,7 +1213,7 @@ AudioSource:
   m_GameObject: {fileID: 3915760198936932476}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 9467766ff3c83eb46a5a372686e794e4, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 0ef0fd4a1ac636f4794819507850d28f, type: 3}
   m_PlayOnAwake: 1

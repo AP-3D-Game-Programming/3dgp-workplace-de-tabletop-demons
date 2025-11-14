@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.036666665
+  m_VoxelSize: 0.1
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: db202360ff533ca409811192c18a8db0, type: 2}
   m_BuildHeightMesh: 0
@@ -189,7 +189,7 @@ AudioSource:
   m_GameObject: {fileID: 3468615886090769123}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 9467766ff3c83eb46a5a372686e794e4, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: a90e9867f6598734eb6eee26600e5bad, type: 3}
   m_PlayOnAwake: 1
