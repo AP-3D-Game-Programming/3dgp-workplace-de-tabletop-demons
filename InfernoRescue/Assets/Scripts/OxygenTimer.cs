@@ -10,9 +10,12 @@ public class OxygenTimer : MonoBehaviour
     public float depletionRate = 1f;
 
     public float fireDamageRate = 5f;
+    public float refillRate = 10f;
 
     private float currentOxygen;
     private bool isInFire = false;
+    private bool isOutOfBreath = false;
+    private bool isOutside = false;
 
 
     void Start()
@@ -25,7 +28,16 @@ public class OxygenTimer : MonoBehaviour
     {
         if (currentOxygen > 0)
         {
-            currentOxygen -= depletionRate * Time.deltaTime;
+            if (isOutside && !isInFire)
+            {
+                currentOxygen += refillRate * Time.deltaTime;
+                currentOxygen = Mathf.Min(maxOxygen, currentOxygen);
+            }
+
+            if (currentOxygen > 0 && currentOxygen <= maxOxygen)
+            {
+                currentOxygen -= depletionRate * Time.deltaTime;
+            }
 
             if (isInFire)
             {
@@ -37,7 +49,12 @@ public class OxygenTimer : MonoBehaviour
             UpdateOxygenDisplay();
         } else
         {
-            Debug.Log("Zuurstof is op");
+            if (!isOutOfBreath)
+            {
+                isOutOfBreath = true;
+                LevelManager.Instance.TriggerGameOver("You ran out of oxygen!");
+                Debug.Log("Zuurstof is op");
+            }
         }
     }
 
@@ -48,6 +65,12 @@ public class OxygenTimer : MonoBehaviour
             Debug.Log("In vuur");
             isInFire = true;
         }
+
+        if (other.CompareTag("OutsideTrigger"))
+        {
+            Debug.Log("Buiten");
+            isOutside = true;
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -56,6 +79,11 @@ public class OxygenTimer : MonoBehaviour
         {
             Debug.Log("Uit vuur");
             isInFire = false;
+        }
+        if (other.CompareTag("OutsideTrigger"))
+        {
+            Debug.Log("Binnen");
+            isOutside = false;
         }
     }
 
