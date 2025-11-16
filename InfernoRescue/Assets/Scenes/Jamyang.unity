@@ -119,28 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &36445398 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 546209201016164214, guid: faff1340fa72285499898325955963ea, type: 3}
-  m_PrefabInstance: {fileID: 1775668432606214377}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &36445403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36445398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  openAngle: 90
-  openSpeed: 2
-  isOpen: 0
-  doorObstacle: {fileID: 0}
-  navMeshSurface: {fileID: 0}
 --- !u!1001 &90395531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -491,28 +469,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 546209201015872992, guid: faff1340fa72285499898325955963ea, type: 3}
   m_PrefabInstance: {fileID: 1775668432606214377}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &279593045 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 546209201016163998, guid: faff1340fa72285499898325955963ea, type: 3}
-  m_PrefabInstance: {fileID: 1775668432606214377}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &279593050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 279593045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  openAngle: 90
-  openSpeed: 2
-  isOpen: 0
-  doorObstacle: {fileID: 0}
-  navMeshSurface: {fileID: 0}
 --- !u!1001 &282530991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -740,50 +696,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 706108787796925423, guid: 27484de027acbf042a306e4795cc105d, type: 3}
   m_PrefabInstance: {fileID: 449013231}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &519245009 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 546209201016163986, guid: faff1340fa72285499898325955963ea, type: 3}
-  m_PrefabInstance: {fileID: 1775668432606214377}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &519245014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519245009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  openAngle: 90
-  openSpeed: 2
-  isOpen: 0
-  doorObstacle: {fileID: 0}
-  navMeshSurface: {fileID: 0}
---- !u!1 &537743260 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 546209201016163970, guid: faff1340fa72285499898325955963ea, type: 3}
-  m_PrefabInstance: {fileID: 1775668432606214377}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &537743265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 537743260}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  openAngle: -90
-  openSpeed: 2
-  isOpen: 0
-  doorObstacle: {fileID: 0}
-  navMeshSurface: {fileID: 0}
 --- !u!1001 &564564571
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -846,50 +758,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 706108787796925423, guid: 27484de027acbf042a306e4795cc105d, type: 3}
   m_PrefabInstance: {fileID: 564564571}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &613726535 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 546209201016160732, guid: faff1340fa72285499898325955963ea, type: 3}
-  m_PrefabInstance: {fileID: 1775668432606214377}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &613726540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 613726535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  openAngle: 90
-  openSpeed: 2
-  isOpen: 0
-  doorObstacle: {fileID: 0}
-  navMeshSurface: {fileID: 0}
---- !u!1 &676683367 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 546209201016164084, guid: faff1340fa72285499898325955963ea, type: 3}
-  m_PrefabInstance: {fileID: 1775668432606214377}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &676683372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 676683367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  openAngle: 90
-  openSpeed: 2
-  isOpen: 0
-  doorObstacle: {fileID: 0}
-  navMeshSurface: {fileID: 0}
 --- !u!1001 &728669715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -952,72 +820,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2718802485563703698, guid: 70386125712e2ad40a4b79bf16f82dc1, type: 3}
   m_PrefabInstance: {fileID: 728669715}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &742317548 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 546209201016163996, guid: faff1340fa72285499898325955963ea, type: 3}
-  m_PrefabInstance: {fileID: 1775668432606214377}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &742317553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 742317548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  openAngle: -90
-  openSpeed: 2
-  isOpen: 0
-  doorObstacle: {fileID: 0}
-  navMeshSurface: {fileID: 0}
---- !u!1 &888449354 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 546209201016163968, guid: faff1340fa72285499898325955963ea, type: 3}
-  m_PrefabInstance: {fileID: 1775668432606214377}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &888449359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 888449354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  openAngle: 90
-  openSpeed: 2
-  isOpen: 0
-  doorObstacle: {fileID: 0}
-  navMeshSurface: {fileID: 0}
---- !u!1 &983245043 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 546209201016163974, guid: faff1340fa72285499898325955963ea, type: 3}
-  m_PrefabInstance: {fileID: 1775668432606214377}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &983245048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 983245043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  openAngle: 90
-  openSpeed: 2
-  isOpen: 0
-  doorObstacle: {fileID: 0}
-  navMeshSurface: {fileID: 0}
 --- !u!1 &990019595
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,13 +1079,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1126313776118572493, guid: 50e6479ca4b2cef41ad1bd4a018c7e8a, type: 3}
+      propertyPath: rayLength
+      value: 0.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 1126313776118572493, guid: 50e6479ca4b2cef41ad1bd4a018c7e8a, type: 3}
+      propertyPath: stepHeight
+      value: 0.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 2043246176874224316, guid: 50e6479ca4b2cef41ad1bd4a018c7e8a, type: 3}
+      propertyPath: m_Radius
+      value: 0.46
+      objectReference: {fileID: 0}
     - target: {fileID: 3118582014472070403, guid: 50e6479ca4b2cef41ad1bd4a018c7e8a, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 13400000, guid: d9bde8a682c97214dbd97a3b84dcc1b6, type: 2}
-    - target: {fileID: 4165446237954639174, guid: 50e6479ca4b2cef41ad1bd4a018c7e8a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.29
+      propertyPath: m_Height
+      value: 2.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3118582014472070403, guid: 50e6479ca4b2cef41ad1bd4a018c7e8a, type: 3}
+      propertyPath: m_Center.y
+      value: -0.19
       objectReference: {fileID: 0}
     - target: {fileID: 5042951214423083674, guid: 50e6479ca4b2cef41ad1bd4a018c7e8a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1325,55 +1139,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8214797036393193119, guid: 50e6479ca4b2cef41ad1bd4a018c7e8a, type: 3}
-      propertyPath: wallLayer.m_Bits
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8214797036393193119, guid: 50e6479ca4b2cef41ad1bd4a018c7e8a, type: 3}
-      propertyPath: groundLayer.m_Bits
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 8230915388909087415, guid: 50e6479ca4b2cef41ad1bd4a018c7e8a, type: 3}
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
-    - target: {fileID: 8614115875701716775, guid: 50e6479ca4b2cef41ad1bd4a018c7e8a, type: 3}
-      propertyPath: field of view
-      value: 51
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2043246176874224316, guid: 50e6479ca4b2cef41ad1bd4a018c7e8a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8230915388909087415, guid: 50e6479ca4b2cef41ad1bd4a018c7e8a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1941608487}
-    - targetCorrespondingSourceObject: {fileID: 8230915388909087415, guid: 50e6479ca4b2cef41ad1bd4a018c7e8a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1941608495}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50e6479ca4b2cef41ad1bd4a018c7e8a, type: 3}
---- !u!1 &1160009248 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 546209201016164010, guid: faff1340fa72285499898325955963ea, type: 3}
-  m_PrefabInstance: {fileID: 1775668432606214377}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1160009253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1160009248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  openAngle: 90
-  openSpeed: 2
-  isOpen: 0
-  doorObstacle: {fileID: 0}
-  navMeshSurface: {fileID: 0}
 --- !u!1001 &1161966937
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1532,28 +1307,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ec00dc9cd6e3c34885548c194b11cc0, type: 3}
---- !u!1 &1192164117 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 546209201016163992, guid: faff1340fa72285499898325955963ea, type: 3}
-  m_PrefabInstance: {fileID: 1775668432606214377}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1192164122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1192164117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  openAngle: 90
-  openSpeed: 2
-  isOpen: 0
-  doorObstacle: {fileID: 0}
-  navMeshSurface: {fileID: 0}
 --- !u!1001 &1322858618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1616,28 +1369,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3478976176891382152, guid: c8dd0b4edb1950740bf1a58d2b43ee8d, type: 3}
   m_PrefabInstance: {fileID: 1322858618}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1323048821 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 546209201016164180, guid: faff1340fa72285499898325955963ea, type: 3}
-  m_PrefabInstance: {fileID: 1775668432606214377}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1323048826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1323048821}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  openAngle: -90
-  openSpeed: 2
-  isOpen: 0
-  doorObstacle: {fileID: 0}
-  navMeshSurface: {fileID: 0}
 --- !u!1001 &1325018590
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1700,28 +1431,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 706108787796925423, guid: 27484de027acbf042a306e4795cc105d, type: 3}
   m_PrefabInstance: {fileID: 1325018590}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1377523788 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 546209201016164172, guid: faff1340fa72285499898325955963ea, type: 3}
-  m_PrefabInstance: {fileID: 1775668432606214377}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1377523793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1377523788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  openAngle: 90
-  openSpeed: 2
-  isOpen: 0
-  doorObstacle: {fileID: 0}
-  navMeshSurface: {fileID: 0}
 --- !u!1001 &1458750143
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1969,28 +1678,6 @@ MonoBehaviour:
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: db202360ff533ca409811192c18a8db0, type: 2}
   m_BuildHeightMesh: 0
---- !u!1 &1521569521 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 546209201016163980, guid: faff1340fa72285499898325955963ea, type: 3}
-  m_PrefabInstance: {fileID: 1775668432606214377}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1521569526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1521569521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  openAngle: 90
-  openSpeed: 2
-  isOpen: 0
-  doorObstacle: {fileID: 0}
-  navMeshSurface: {fileID: 0}
 --- !u!1001 &1535072158
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2053,28 +1740,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 706108787796925423, guid: 27484de027acbf042a306e4795cc105d, type: 3}
   m_PrefabInstance: {fileID: 1535072158}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1559315891 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 546209201016164008, guid: faff1340fa72285499898325955963ea, type: 3}
-  m_PrefabInstance: {fileID: 1775668432606214377}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1559315896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1559315891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  openAngle: -90
-  openSpeed: 2
-  isOpen: 0
-  doorObstacle: {fileID: 0}
-  navMeshSurface: {fileID: 0}
 --- !u!1001 &1591265149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2137,116 +1802,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3915760198936932476, guid: 66e03da447e738443a9d2d3be7e121a3, type: 3}
   m_PrefabInstance: {fileID: 1591265149}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1597356323 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 546209201016163984, guid: faff1340fa72285499898325955963ea, type: 3}
-  m_PrefabInstance: {fileID: 1775668432606214377}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1597356328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597356323}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  openAngle: -90
-  openSpeed: 2
-  isOpen: 0
-  doorObstacle: {fileID: 0}
-  navMeshSurface: {fileID: 0}
---- !u!1 &1666181741 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 546209201016163994, guid: faff1340fa72285499898325955963ea, type: 3}
-  m_PrefabInstance: {fileID: 1775668432606214377}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1666181746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1666181741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  openAngle: -90
-  openSpeed: 2
-  isOpen: 0
-  doorObstacle: {fileID: 0}
-  navMeshSurface: {fileID: 0}
---- !u!114 &1666181747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1666181741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  openAngle: -90
-  openSpeed: 2
-  isOpen: 0
-  doorObstacle: {fileID: 0}
-  navMeshSurface: {fileID: 0}
 --- !u!4 &1690722047 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3478976176891382152, guid: c8dd0b4edb1950740bf1a58d2b43ee8d, type: 3}
   m_PrefabInstance: {fileID: 1161966937}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1722642880 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 546209201016163988, guid: faff1340fa72285499898325955963ea, type: 3}
-  m_PrefabInstance: {fileID: 1775668432606214377}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1722642885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1722642880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  openAngle: 90
-  openSpeed: 2
-  isOpen: 0
-  doorObstacle: {fileID: 0}
-  navMeshSurface: {fileID: 0}
---- !u!1 &1737951424 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 546209201016163972, guid: faff1340fa72285499898325955963ea, type: 3}
-  m_PrefabInstance: {fileID: 1775668432606214377}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1737951429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1737951424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  openAngle: -90
-  openSpeed: 2
-  isOpen: 0
-  doorObstacle: {fileID: 0}
-  navMeshSurface: {fileID: 0}
 --- !u!1001 &1791374457
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2309,28 +1869,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 706108787796925423, guid: 27484de027acbf042a306e4795cc105d, type: 3}
   m_PrefabInstance: {fileID: 1791374457}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1803075234 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 546209201016164016, guid: faff1340fa72285499898325955963ea, type: 3}
-  m_PrefabInstance: {fileID: 1775668432606214377}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1803075239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1803075234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  openAngle: 90
-  openSpeed: 2
-  isOpen: 0
-  doorObstacle: {fileID: 0}
-  navMeshSurface: {fileID: 0}
 --- !u!1001 &1861470787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2431,77 +1969,6 @@ Transform:
   - {fileID: 282530992}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1941239742 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 546209201016163976, guid: faff1340fa72285499898325955963ea, type: 3}
-  m_PrefabInstance: {fileID: 1775668432606214377}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1941239747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941239742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  openAngle: 90
-  openSpeed: 2
-  isOpen: 0
-  doorObstacle: {fileID: 1941239752}
-  navMeshSurface: {fileID: 1488569034}
---- !u!208 &1941239752
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941239742}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.0050000004, y: 0.001, z: 0.012}
-  m_MoveThreshold: 0.1
-  m_Carve: 1
-  m_CarveOnlyStationary: 1
-  m_Center: {x: -0.0050000004, y: 0.001, z: 0}
-  m_TimeToStationary: 0.5
---- !u!1 &1941608479 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8230915388909087415, guid: 50e6479ca4b2cef41ad1bd4a018c7e8a, type: 3}
-  m_PrefabInstance: {fileID: 1155261677}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1941608487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941608479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c59e40a0aaf4d7c47832d971995c6440, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorOpenAction
-  interactDistance: 3
---- !u!114 &1941608495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941608479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6aa91941c69595d4e9b7cece815cae4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ExtinguishFire
-  range: 3
-  waterSprayEffect: {fileID: 0}
-  smokeEffectPrefab: {fileID: 0}
 --- !u!1001 &1950563166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2564,44 +2031,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6909299330749633336, guid: 38ccc072106dd3e4fb96d6d053fd009c, type: 3}
   m_PrefabInstance: {fileID: 1950563166}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1999041954 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 546209201016163982, guid: faff1340fa72285499898325955963ea, type: 3}
-  m_PrefabInstance: {fileID: 1775668432606214377}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1999041956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1999041954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e175412ca96c98249b59fdf8a0f739b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  openAngle: -90
-  openSpeed: 2
-  isOpen: 0
-  doorObstacle: {fileID: 1999041961}
-  navMeshSurface: {fileID: 1488569034}
---- !u!208 &1999041961
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1999041954}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.0050000004, y: 0.001, z: 0.012}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0.0050000004, y: 0.001, z: -0.001}
-  m_TimeToStationary: 0.5
 --- !u!1001 &2026234807
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2672,18 +2101,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1488569033}
     m_Modifications:
-    - target: {fileID: 546209201015872232, guid: faff1340fa72285499898325955963ea, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 546209201015872232, guid: faff1340fa72285499898325955963ea, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 546209201015872232, guid: faff1340fa72285499898325955963ea, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.00974
-      objectReference: {fileID: 0}
     - target: {fileID: 546209201015872992, guid: faff1340fa72285499898325955963ea, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.12425
@@ -2728,126 +2145,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: office building
       objectReference: {fileID: 0}
-    - target: {fileID: 546209201016160640, guid: faff1340fa72285499898325955963ea, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 546209201016160642, guid: faff1340fa72285499898325955963ea, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 546209201016160642, guid: faff1340fa72285499898325955963ea, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 546209201016160642, guid: faff1340fa72285499898325955963ea, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270314803754790527, guid: faff1340fa72285499898325955963ea, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270314803754790527, guid: faff1340fa72285499898325955963ea, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3486617016247611314, guid: faff1340fa72285499898325955963ea, type: 3}
-      propertyPath: m_NavMeshData
+    - target: {fileID: 4941856577200361624, guid: faff1340fa72285499898325955963ea, type: 3}
+      propertyPath: navMeshSurface
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3870055407855691737, guid: faff1340fa72285499898325955963ea, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3870055407855691737, guid: faff1340fa72285499898325955963ea, type: 3}
-      propertyPath: m_Material
+      objectReference: {fileID: 1488569034}
+    - target: {fileID: 5680369147222555486, guid: faff1340fa72285499898325955963ea, type: 3}
+      propertyPath: navMeshSurface
       value: 
-      objectReference: {fileID: 13400000, guid: b6e5e74fbb556ef4694bf6fe4611ef1c, type: 2}
-    - target: {fileID: 3870055407855691737, guid: faff1340fa72285499898325955963ea, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3486617016247611314, guid: faff1340fa72285499898325955963ea, type: 3}
+      objectReference: {fileID: 1488569034}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 546209201016164084, guid: faff1340fa72285499898325955963ea, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 676683372}
-    - targetCorrespondingSourceObject: {fileID: 546209201016164172, guid: faff1340fa72285499898325955963ea, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1377523793}
-    - targetCorrespondingSourceObject: {fileID: 546209201016163974, guid: faff1340fa72285499898325955963ea, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 983245048}
-    - targetCorrespondingSourceObject: {fileID: 546209201016163972, guid: faff1340fa72285499898325955963ea, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1737951429}
-    - targetCorrespondingSourceObject: {fileID: 546209201016163970, guid: faff1340fa72285499898325955963ea, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 537743265}
-    - targetCorrespondingSourceObject: {fileID: 546209201016163968, guid: faff1340fa72285499898325955963ea, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 888449359}
-    - targetCorrespondingSourceObject: {fileID: 546209201016163998, guid: faff1340fa72285499898325955963ea, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 279593050}
-    - targetCorrespondingSourceObject: {fileID: 546209201016163996, guid: faff1340fa72285499898325955963ea, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 742317553}
-    - targetCorrespondingSourceObject: {fileID: 546209201016163986, guid: faff1340fa72285499898325955963ea, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 519245014}
-    - targetCorrespondingSourceObject: {fileID: 546209201016163984, guid: faff1340fa72285499898325955963ea, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1597356328}
-    - targetCorrespondingSourceObject: {fileID: 546209201016163976, guid: faff1340fa72285499898325955963ea, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1941239747}
-    - targetCorrespondingSourceObject: {fileID: 546209201016163976, guid: faff1340fa72285499898325955963ea, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1941239752}
-    - targetCorrespondingSourceObject: {fileID: 546209201016163982, guid: faff1340fa72285499898325955963ea, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1999041956}
-    - targetCorrespondingSourceObject: {fileID: 546209201016163982, guid: faff1340fa72285499898325955963ea, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1999041961}
-    - targetCorrespondingSourceObject: {fileID: 546209201016163980, guid: faff1340fa72285499898325955963ea, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1521569526}
-    - targetCorrespondingSourceObject: {fileID: 546209201016163994, guid: faff1340fa72285499898325955963ea, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1666181746}
-    - targetCorrespondingSourceObject: {fileID: 546209201016163994, guid: faff1340fa72285499898325955963ea, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1666181747}
-    - targetCorrespondingSourceObject: {fileID: 546209201016163992, guid: faff1340fa72285499898325955963ea, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1192164122}
-    - targetCorrespondingSourceObject: {fileID: 546209201016163988, guid: faff1340fa72285499898325955963ea, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1722642885}
-    - targetCorrespondingSourceObject: {fileID: 546209201016164010, guid: faff1340fa72285499898325955963ea, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1160009253}
-    - targetCorrespondingSourceObject: {fileID: 546209201016164008, guid: faff1340fa72285499898325955963ea, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1559315896}
-    - targetCorrespondingSourceObject: {fileID: 546209201016160732, guid: faff1340fa72285499898325955963ea, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 613726540}
-    - targetCorrespondingSourceObject: {fileID: 546209201016164214, guid: faff1340fa72285499898325955963ea, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 36445403}
-    - targetCorrespondingSourceObject: {fileID: 546209201016164180, guid: faff1340fa72285499898325955963ea, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1323048826}
-    - targetCorrespondingSourceObject: {fileID: 546209201016164016, guid: faff1340fa72285499898325955963ea, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1803075239}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: faff1340fa72285499898325955963ea, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

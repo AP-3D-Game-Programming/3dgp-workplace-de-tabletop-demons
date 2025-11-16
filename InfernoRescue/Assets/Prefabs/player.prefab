@@ -154,6 +154,9 @@ GameObject:
   - component: {fileID: 812392856299051159}
   - component: {fileID: 4641642207888255448}
   - component: {fileID: 8491368898481330461}
+  - component: {fileID: 2043246176874224316}
+  - component: {fileID: 7334470095302104737}
+  - component: {fileID: 580675211807616955}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -242,7 +245,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8230915388909087415}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: d9bde8a682c97214dbd97a3b84dcc1b6, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -255,9 +258,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5000001
-  m_Height: 2
+  m_Height: 1.8
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Center: {x: 0.000000059604645, y: 0.42, z: -0.00000008940697}
 --- !u!54 &1246454310443225602
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -351,6 +354,55 @@ MonoBehaviour:
   range: 5
   waterSprayEffect: {fileID: 6991629680366022150}
   smokeEffectPrefab: {fileID: 8954394225426408622, guid: 72ee2fffd1f4a2d4c9562f2838c79f39, type: 3}
+--- !u!135 &2043246176874224316
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8230915388909087415}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.4
+  m_Center: {x: 0.00000005960464, y: -0.72, z: -0.00000008940696}
+--- !u!114 &7334470095302104737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8230915388909087415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59e40a0aaf4d7c47832d971995c6440, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorOpenAction
+  interactDistance: 3
+--- !u!114 &580675211807616955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8230915388909087415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aa91941c69595d4e9b7cece815cae4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ExtinguishFire
+  range: 3
+  waterSprayEffect: {fileID: 0}
+  smokeEffectPrefab: {fileID: 0}
 --- !u!1001 &5107360208493647745
 PrefabInstance:
   m_ObjectHideFlags: 0
