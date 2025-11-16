@@ -5,25 +5,17 @@ TagManager:
   serializedVersion: 3
   tags:
   - Fire
-  - Ground
-  - door
-  - button f4
-  - button f5
-  - button f3
-  - button f2
-  - button f1
-  - button f6
-  - Follower
+  - OutsideTrigger
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Ground
+  - 
   - Water
   - UI
-  - Interact
-  - glass
-  - Character Preview
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -53,10 +45,3 @@ TagManager:
     locked: 0
   m_RenderingLayers:
   - Default
-  - Light Layer 1
-  - Light Layer 2
-  - Light Layer 3
-  - Light Layer 4
-  - Light Layer 5
-  - Light Layer 6
-  - Light Layer 7
