@@ -421,6 +421,11 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!4 &771904523 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5042951214423083674, guid: 50e6479ca4b2cef41ad1bd4a018c7e8a, type: 3}
+  m_PrefabInstance: {fileID: 2017072144}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &806438209
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -538,6 +543,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2301050464006000975, guid: 38ccc072106dd3e4fb96d6d053fd009c, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 771904523}
     - target: {fileID: 3303271691580484296, guid: 38ccc072106dd3e4fb96d6d053fd009c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.9911339
@@ -1108,6 +1117,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 812392856299051159, guid: 50e6479ca4b2cef41ad1bd4a018c7e8a, type: 3}
+      propertyPath: interactLayer.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 5042951214423083674, guid: 50e6479ca4b2cef41ad1bd4a018c7e8a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.64
