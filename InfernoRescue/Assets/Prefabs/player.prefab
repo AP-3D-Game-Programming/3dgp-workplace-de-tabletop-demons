@@ -325,7 +325,7 @@ MonoBehaviour:
   interactRange: 10
   interactLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
 --- !u!114 &4641642207888255448
 MonoBehaviour:
   m_ObjectHideFlags: 0
