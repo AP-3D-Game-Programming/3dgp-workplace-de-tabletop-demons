@@ -24,6 +24,14 @@ public class OxygenTimer : MonoBehaviour
         UpdateOxygenDisplay();
     }
 
+    public void ForceExitFire()
+    {
+        if (isInFire)
+        {
+            isInFire = false;
+        }
+    }
+
     void Update()
     {
         if (currentOxygen > 0)
@@ -32,9 +40,7 @@ public class OxygenTimer : MonoBehaviour
             {
                 currentOxygen += refillRate * Time.deltaTime;
                 currentOxygen = Mathf.Min(maxOxygen, currentOxygen);
-            }
-
-            if (currentOxygen > 0 && currentOxygen <= maxOxygen)
+            } else
             {
                 currentOxygen -= depletionRate * Time.deltaTime;
             }

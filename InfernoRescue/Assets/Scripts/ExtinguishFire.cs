@@ -6,6 +6,13 @@ public class ExtinguishFire : MonoBehaviour
     public ParticleSystem waterSprayEffect;
     public GameObject smokeEffectPrefab;
 
+    private OxygenTimer playerOxygenTimer;
+
+    private void Start()
+    {
+        playerOxygenTimer = GetComponent<OxygenTimer>();
+    }
+
     void Update()
     {
         if (Input.GetKey(KeyCode.F))
@@ -40,6 +47,12 @@ public class ExtinguishFire : MonoBehaviour
             {
                 hit.enabled = false;
                 Debug.Log($"Fire detected: {hit.name}. Destroying...");
+
+                if (playerOxygenTimer != null)
+                {
+                    playerOxygenTimer.ForceExitFire();
+                }
+
                 if (smokeEffectPrefab != null)
                 {
                     // Pak de positie van het vuur
